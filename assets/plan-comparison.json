@@ -1,0 +1,33 @@
+{
+  "status": "پیشنهاد محدودهٔ پایه برای بررسی و توافق نهایی",
+  "currency": "تومان",
+  "plans": [
+    {
+      "name": "شروع حرفه‌ای",
+      "price": 18000000,
+      "contentPages": 5,
+      "initialProducts": 0,
+      "trainingSessions": 1,
+      "sessionMinutes": 60,
+      "supportMonths": 1
+    },
+    {
+      "name": "رشد کسب‌وکار",
+      "price": 30000000,
+      "contentPages": 10,
+      "initialProducts": 0,
+      "trainingSessions": 2,
+      "sessionMinutes": 60,
+      "supportMonths": 3
+    },
+    {
+      "name": "فروشگاه پیشرفته",
+      "price": 50000000,
+      "contentPages": 8,
+      "initialProducts": 20,
+      "trainingSessions": 2,
+      "sessionMinutes": 90,
+      "supportMonths": 6
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "name": "تابلو دکور",
+    "url": "https://tablo-decor.com/",
+    "page": "project-tablo-decor.html",
+    "image": "tablo-decor-storefront.png",
+    "caption": "تصویر واقعی صفحهٔ اصلی فروشگاه تابلو دکور."
+  },
+  {
+    "name": "نیو بیکینی",
+    "url": "https://www.new-bikini.com/",
+    "page": "project-new-bikini.html",
+    "image": "new-bikini-visual.webp",
+    "caption": "تصویر معرفی مجموعهٔ لوازم شنا، برگرفته از خود وب‌سایت نیو بیکینی؛ این تصویر اسکرین‌شات کامل صفحه نیست."
+  },
+  {
+    "name": "نسیم گلد",
+    "url": "https://nasimgold.com/",
+    "page": "project-nasim-gold.html",
+    "image": "nasim-gold-storefront.png",
+    "caption": "تصویر واقعی صفحهٔ اصلی وب‌سایت طلا و جواهرات نسیم."
+  },
+  {
+    "name": "شیراز یدک",
+    "url": "https://shzvip.ir/",
+    "image": "shiraz-yadak-storefront.png",
+    "caption": "تصویر واقعی صفحهٔ اصلی فروشگاه شیراز یدک.",
+    "page": "project-shiraz-yadak.html",
+    "status": "پروژهٔ اجراشده"
+  },
+  {
+    "name": "فروشگاه عطر و ادکلن",
+    "url": "https://halochin.ir/perfume-shop/",
+    "image": "perfume-storefront.png",
+    "caption": "تصویر واقعی از پیش‌نمایش فروشگاه عطر و ادکلن در نشانی ارسالی.",
+    "page": "project-perfume-shop.html",
+    "status": "پیش‌نمایش فروشگاهی"
+  }
+]
