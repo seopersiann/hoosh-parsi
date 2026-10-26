@@ -65,6 +65,7 @@ def configure(site_url, root):
             previous_url = urlsplit(html.unescape(previous.group(1)))
             old_origins.add(f'{previous_url.scheme}://{previous_url.netloc}')
         project_images = {
+            'article-wordpress-vs-custom.html': ('assets/wordpress-vs-custom.jpg',1536,1024,'تصویر مفهومی مقایسهٔ طراحی سایت وردپرسی و توسعهٔ اختصاصی'),
             'article-tablo-decor-case-study.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
             'project-tablo-decor.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
             'project-new-bikini.html': ('assets/new-bikini-visual.webp',1200,675,'تصویر معرفی مجموعهٔ لوازم شنا از سایت نیو بیکینی'),
