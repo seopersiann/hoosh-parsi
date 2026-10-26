@@ -86,3 +86,72 @@
 
 /* Comparison article: readable RTL table with contained mobile scrolling. */
 .article-featured>img{border:1px solid #668bbd55;border-radius:14px;box-shadow:0 12px 40px #0004}.article-prose h3{font-size:17px;line-height:2;color:#d7e8ff;margin:22px 0 10px}.article-table-scroll{max-width:100%;overflow-x:auto;border:1px solid #638fbd40;border-radius:12px;margin-block:22px;scrollbar-color:#39649a #101a2b}.article-comparison{width:100%;min-width:620px;border-collapse:collapse;text-align:start;font-size:12px;line-height:2.2}.article-comparison caption{padding:14px;color:#b8d2ee;text-align:start}.article-comparison th,.article-comparison td{padding:14px 16px;border-block-start:1px solid #638fbd30;vertical-align:top}.article-comparison thead th{background:#0c2846;color:#d8efff}.article-comparison tbody th{color:#d8efff;min-width:110px}.article-comparison td{color:#b8c9dc}.article-comparison tbody tr:nth-child(even){background:#14223988}.articles-grid:has(>.article-card:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:760px){.articles-grid:has(>.article-card:nth-child(2):last-child){grid-template-columns:1fr}.article-prose h3{font-size:16px}}
+
+/* Mobile reading scale: 14px body copy, 15px long-form prose, 12px metadata.
+   Scoped to phones/small tablets so desktop typography stays unchanged. */
+@media (max-width:760px) {
+  body {font-size:14px}
+  body :is(.hero-description,.hero-layout .hero-description,.service-card p,
+    .section-heading>p,.section-heading.centered>p,.about>div>p:not(.section-kicker),
+    .business-trust>div>p:not(.section-kicker),.portfolio-info>p,
+    .specialty-card p,.advantages-grid p,.website-features p,.process-grid p,
+    .order-timeline .process-grid p,.feature-list li,.faq-list details p,
+    .final-cta>p:not(.section-kicker),.inner-hero>p:last-child,
+    .about-story p:not(.section-kicker),.contact-channels p:not(.section-kicker),
+    .accountability p,.identity-section p:not(.section-kicker),.service-intro p:not(.section-kicker),
+    .service-scope p,.service-scope li,.project-facts dd,.project-disclosure,
+    .article-card-body>p,.article-author p,.supplied-review blockquote p,
+    .ceo-copy blockquote p,.home-location p:not(.section-kicker),.home-location address,
+    .office-section address,.legal-content section p,.legal-content li,.legal-intro,
+    .footer-identity>p,.footer-contact address) {
+    font-size:14px;line-height:2.15;
+  }
+  body :is(.article-prose p,.article-prose li,.article-lead) {font-size:15px;line-height:2.2}
+  body :is(.hero-actions .button,.hero-layout .hero-actions .button,.button,
+    .specialty-link,.project-detail-link,.text-link,.quiet-link,.related-services a,
+    .related-articles>a,.project-url,.footer-links nav a,.footer-contact>a,
+    .footer-contact>a span,.footer-contact>p,.footer-contact .footer-wa,
+    .channel-slots article>a,.channel-slots strong,.contact-direct-actions .button,
+    .legal-nav a,.article-layout .legal-nav a) {
+    font-size:13px;line-height:2;
+  }
+  body .faq-list summary {font-size:14px}
+  body :is(.section-kicker,.section-heading .section-kicker,.eyebrow,
+    .hero-layout .eyebrow,.hero-assurances,.hero-layout .hero-assurances,
+    .benefit small,.project-type,.demo-label,.portfolio-filters button,.project-live-badge,
+    .article-card-meta,.article-byline,.article-ai-note,.content-disclosure,
+    .plan-number,.plan-badge,.price-card small,.review-origin,.review-score,.case-study-thumb>span,
+    .case-study-shot figcaption,.project-shot figcaption,.reviews-disclosure,
+    .review-person small,.review-person>span:last-child,.pricing-note,
+    .comparison-heading p,.comparison-note,.comparison-scroll th,.comparison-scroll td,
+    .article-comparison,.article-sources li,.watch-note,.breadcrumbs,
+    .identity-facts dt,.identity-facts dd,.business-trust-details small,
+    .footer-small,.footer-bottom,.footer-identity .legal-name,
+    .field label,.field label span,.form-privacy-link,.form-status,.policy-date) {
+    font-size:12px;line-height:2.05;
+  }
+  body .business-trust-details p {font-size:14px}
+  body .hero-layout .hero-assurances {flex-wrap:wrap;row-gap:8px}
+  body :is(.hero-video figcaption p,.hero-video figcaption>.text-link,
+    .video-frame-top,.hero-layout .video-frame-top,.video-duration,.hero-layout .video-duration) {
+    font-size:11px;line-height:1.9;
+  }
+  body .video-frame-top {flex-wrap:wrap;row-gap:4px}
+  body :is(.service-card h3,.specialty-card h3,.advantages-grid h3,
+    .website-features h3,.process-grid h3,.portfolio-info h3,.article-card h3) {
+    font-size:19px;line-height:1.9;
+  }
+  body .hero-video h2 {font-size:15px;line-height:2}
+  body .footer-grid h2 {font-size:15px;line-height:2}
+  body .benefit span {font-size:15px}
+  body .site-header nav a {font-size:15px}
+  body .field :is(input,select,textarea) {font-size:16px;line-height:1.9}
+  body .field label {display:block;margin-block-end:7px}
+  body .ceo-socials {flex-wrap:wrap}
+  body .ceo-socials a {font-size:12px}
+  body .floating-whatsapp {font-size:12px}
+  body .floating-whatsapp span {max-width:160px}
+  body .site-header .brand small {font-size:9px}
+  body .footer-bottom {flex-wrap:wrap;row-gap:10px}
+  body .portfolio-real .portfolio-info p {min-height:0}
+}
