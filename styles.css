@@ -155,3 +155,40 @@
   body .footer-bottom {flex-wrap:wrap;row-gap:10px}
   body .portfolio-real .portfolio-info p {min-height:0}
 }
+
+/* Summary cards follow the portfolio; the detailed comparison lives near the FAQ. */
+#services-summary.services-relocated{margin-block:16px 60px;max-width:1200px;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+#services-summary .service-card{background:radial-gradient(ellipse at 85% 0,#0e96ff60,transparent 52%),linear-gradient(145deg,#103b7a,#09182f 75%);color:#f7f9ff;border-color:#359dff66;box-shadow:0 12px 30px #0003,inset 0 1px 1px #a7d2ff44;min-height:235px;padding:28px 18px 16px}
+#services-summary .service-card h3{white-space:normal;line-height:1.9}
+#services-summary .service-card p{color:#c4d3e8}
+#services-summary .service-card:hover{border-color:#59c7ff;box-shadow:0 14px 32px #0066ff24,inset 0 1px 1px #a7d2ff44}
+.full-plan-link{display:table;margin:28px auto 0;text-align:center}
+.detailed-plans{margin-block:10px 60px}
+.detailed-plans .comparison-heading h2{font-size:26px;line-height:1.9;margin:0 0 10px;color:#e0efff}
+.mobile-plan-comparison{display:none}
+@media(max-width:1000px){#services-summary.services-relocated{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .detailed-plans .comparison-scroll{display:none}
+ .mobile-plan-comparison{display:grid;gap:14px;padding:0 20px 22px}
+ .mobile-comparison-hint{font-size:13px;line-height:2.1;color:#a8c1df;margin:0 0 3px}
+ .mobile-plan{min-width:0;border:1px solid #477ba74d;border-radius:12px;background:linear-gradient(145deg,#112b48,#0b182a);overflow:hidden}
+ .mobile-plan summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px;cursor:pointer;list-style:none}
+ .mobile-plan summary::-webkit-details-marker{display:none}
+ .mobile-plan-heading{min-width:0;display:grid;gap:5px}
+ .mobile-plan-heading strong{font-size:16px;line-height:1.9;color:#edf6ff}
+ .mobile-plan-price{font-size:14px;line-height:1.9;color:#6ed5ff}
+ .mobile-plan-toggle{flex:0 0 28px;height:28px;display:grid;place-items:center;font-size:23px;line-height:1;border-radius:50%;background:#1e56814a;color:#8bdcff;transition:transform .2s}
+ .mobile-plan[open] .mobile-plan-toggle{transform:rotate(45deg)}
+ .mobile-plan[open] summary{border-bottom:1px solid #477ba74d;background:#174c6e33}
+ .mobile-plan dl{margin:0;padding:0 18px}
+ .mobile-plan dl>div{padding-block:13px;border-bottom:1px solid #6387af26}
+ .mobile-plan dl>div:last-child{border:0}
+ .mobile-plan dt{font-size:12px;line-height:2;color:#9eb8d5;margin-bottom:3px}
+ .mobile-plan dd{font-size:14px;line-height:2.1;color:#eef5ff;margin:0;overflow-wrap:anywhere}
+ .mobile-plan>.button{display:flex;width:calc(100% - 36px);margin:6px 18px 20px;padding:12px;font-size:13px}
+ .detailed-plans .comparison-heading h2{font-size:22px}
+ .detailed-plans .comparison-note{font-size:12px;line-height:2.1}
+ #services-summary.services-relocated{margin-block:8px 42px;gap:18px}
+}
+@media(max-width:600px){#services-summary.services-relocated{grid-template-columns:minmax(0,1fr)}#services-summary .service-card{min-height:225px;padding:25px 22px 16px}.mobile-plan-comparison{padding-inline:16px}}
+@media(prefers-reduced-motion:reduce){.mobile-plan-toggle{transition:none}}
