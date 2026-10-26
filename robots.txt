@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://hoosh-parsi.ir/sitemap.xml
+Sitemap: https://hoosh-parsi.ir/sitemap.xml

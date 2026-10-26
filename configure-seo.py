@@ -126,7 +126,7 @@ def configure(site_url, root):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('site_url',nargs='?',default='http://hoosh-parsi.ir',help='Production HTTP or HTTPS origin')
+    parser.add_argument('site_url',nargs='?',default='https://hoosh-parsi.ir',help='Production HTTP or HTTPS origin')
     args=parser.parse_args()
     try: print('SEO and LocalBusiness configured for '+configure(args.site_url,Path(__file__).resolve().parent))
     except ValueError as error: parser.error(str(error))
