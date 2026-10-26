@@ -22,7 +22,7 @@ def business_data(origin):
         'url': origin+'/', 'logo': origin+'/assets/favicon.svg',
         'image': origin+'/assets/favicon.svg',
         'description': 'طراحی وب‌سایت، فروشگاه اینترنتی، سئو و پشتیبانی سایت برای کسب‌وکارهای شیراز',
-        'telephone': '+989221612426', 'email': 'hello@hooshmandparsi.ir',
+        'telephone': '+989221612426', 'email': 'hello@hoosh-parsi.ir',
         'address': {'@type':'PostalAddress', 'streetAddress':'بلوار پاسداران، ساختمان اداری، طبقهٔ چهارم، واحد ۴۰۱', 'addressLocality':'شیراز', 'addressRegion':'فارس', 'addressCountry':'IR'},
         'areaServed': {'@type':'City', 'name':'شیراز'},
         'openingHoursSpecification': [{'@type':'OpeningHoursSpecification', 'dayOfWeek':['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], 'opens':'09:00', 'closes':'17:00'}],
