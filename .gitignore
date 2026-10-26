@@ -1,0 +1,17 @@
+# Local preview captures and distribution archives
+/preview*.png
+/portfolio-preview.png
+/portfolio-update-preview.png
+/*.zip
+
+# OS and Python cache
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local secrets and editor state
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
