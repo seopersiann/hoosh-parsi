@@ -34,17 +34,36 @@ def business_data(origin):
         'priceRange':'طراحی سایت از ۱۸ تا ۵۰ میلیون تومان', 'sameAs':SOCIALS
     }
 
+def rebase_schema_urls(value, old_origins, origin, key=None):
+    if key in ('contentUrl', 'thumbnailUrl', 'embedUrl'):
+        return value
+    if isinstance(value, dict):
+        return {k: rebase_schema_urls(v, old_origins, origin, k) for k,v in value.items()}
+    if isinstance(value, list):
+        return [rebase_schema_urls(v, old_origins, origin, key) for v in value]
+    if isinstance(value, str):
+        for old in old_origins:
+            if value == old or value.startswith(old+'/'):
+                if not value.startswith(old+'/wp-content/'):
+                    return origin+value[len(old):]
+    return value
+
 def configure(site_url, root):
     parsed = urlsplit(site_url)
-    if parsed.scheme != 'https' or not parsed.hostname or '.' not in parsed.hostname or parsed.username or parsed.password or parsed.query or parsed.fragment or parsed.path not in ('', '/') or parsed.port:
-        raise ValueError('Use the verified HTTPS origin, with no path, port, credentials or parameters.')
-    origin = f'https://{parsed.hostname.encode("idna").decode("ascii")}'
+    if parsed.scheme not in ('http','https') or not parsed.hostname or '.' not in parsed.hostname or parsed.username or parsed.password or parsed.query or parsed.fragment or parsed.path not in ('', '/') or parsed.port:
+        raise ValueError('Use the production HTTP or HTTPS origin, with no path, port, credentials or parameters.')
+    origin = f'{parsed.scheme}://{parsed.hostname.encode("idna").decode("ascii")}'
     pages = {'index.html':''}
     pages.update({path.name:path.name for path in sorted(root.glob('*.html')) if path.name != 'index.html'})
     for filename, suffix in pages.items():
         path = root/filename
         source = path.read_text(encoding='utf-8')
         canonical = f'{origin}/{suffix}'
+        previous = re.search(r'<link rel="canonical" href="([^"]+)"',source)
+        old_origins = {'https://hooshmandparsi.ir','http://hooshmandparsi.ir'}
+        if previous:
+            previous_url = urlsplit(html.unescape(previous.group(1)))
+            old_origins.add(f'{previous_url.scheme}://{previous_url.netloc}')
         project_images = {
             'article-tablo-decor-case-study.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
             'project-tablo-decor.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
@@ -68,7 +87,7 @@ def configure(site_url, root):
         ])
         source=source.replace('</head>',block+'\n</head>')
         match=re.search(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)
-        schema=json.loads(match.group(1))
+        schema=rebase_schema_urls(json.loads(match.group(1)),old_origins,origin)
         graph=[entry for entry in schema['@graph'] if entry['@type'] not in ('Organization','LocalBusiness','WebSite','BreadcrumbList')]
         title=re.search(r'<title>(.*?)</title>',source).group(1)
         for entry in graph:
@@ -106,7 +125,7 @@ def configure(site_url, root):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('site_url',nargs='?',default='https://hooshmandparsi.ir',help='Verified production HTTPS origin')
+    parser.add_argument('site_url',nargs='?',default='http://hoosh-parsi.ir',help='Production HTTP or HTTPS origin')
     args=parser.parse_args()
     try: print('SEO and LocalBusiness configured for '+configure(args.site_url,Path(__file__).resolve().parent))
     except ValueError as error: parser.error(str(error))
