@@ -54,7 +54,8 @@ def configure(site_url, root):
         raise ValueError('Use the production HTTP or HTTPS origin, with no path, port, credentials or parameters.')
     origin = f'{parsed.scheme}://{parsed.hostname.encode("idna").decode("ascii")}'
     pages = {'index.html':''}
-    pages.update({path.name:path.name for path in sorted(root.glob('*.html')) if path.name != 'index.html'})
+    pages.update({path.name:path.name for path in sorted(root.glob('*.html')) if path.name != 'index.html' and '<meta name="robots" content="noindex, follow">' not in path.read_text(encoding='utf-8')})
+    pages.update({path.relative_to(root).as_posix():path.parent.relative_to(root).as_posix()+'/' for path in sorted(root.glob('*/index.html'))})
     for filename, suffix in pages.items():
         path = root/filename
         source = path.read_text(encoding='utf-8')
@@ -65,6 +66,7 @@ def configure(site_url, root):
             previous_url = urlsplit(html.unescape(previous.group(1)))
             old_origins.add(f'{previous_url.scheme}://{previous_url.netloc}')
         project_images = {
+            'کدهای-تخفیف-نت-افراز-netafraz-خرید-هاست/index.html': ('assets/netafraz-promo.webp',1000,518,'نت افراز؛ راهنمای کد تخفیف خرید هاست'),
             'article-wordpress-vs-custom.html': ('assets/wordpress-vs-custom.jpg',1536,1024,'تصویر مفهومی مقایسهٔ طراحی سایت وردپرسی و توسعهٔ اختصاصی'),
             'article-tablo-decor-case-study.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
             'project-tablo-decor.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
@@ -106,7 +108,7 @@ def configure(site_url, root):
         graph.append({'@type':'WebSite','@id':origin+'/#website','url':origin+'/','name':'هوشمند پارسی','inLanguage':'fa-IR','publisher':{'@id':origin+'/#organization'}})
         if filename != 'index.html':
             items=[{'@type':'ListItem','position':1,'name':'خانه','item':origin+'/'}]
-            if filename.startswith('article-'):
+            if filename.startswith('article-') or filename == 'کدهای-تخفیف-نت-افراز-netafraz-خرید-هاست/index.html':
                 items.append({'@type':'ListItem','position':2,'name':'مقالات و راهنماها','item':origin+'/articles.html'})
             if filename.startswith('project-'):
                 items.append({'@type':'ListItem','position':2,'name':'نمونه‌های طراحی','item':origin+'/#portfolio'})
@@ -116,12 +118,13 @@ def configure(site_url, root):
             graph.append({'@type':'BreadcrumbList','itemListElement':items})
         schema['@graph']=graph
         source=source[:match.start(1)]+json.dumps(schema,ensure_ascii=False)+source[match.end(1):]
-        if filename.startswith('article-'):
+        if filename.startswith('article-') or filename == 'کدهای-تخفیف-نت-افراز-netafraz-خرید-هاست/index.html':
             source=source.replace('<meta property="og:type" content="website">','<meta property="og:type" content="article">')
         path.write_text(source,encoding='utf-8')
     urls='\n'.join(f'  <url><loc>{html.escape(origin+"/"+suffix)}</loc></url>' for name,suffix in pages.items() if not name.startswith('demo-'))
     (root/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls+'\n</urlset>\n',encoding='utf-8')
-    (root/'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {origin}/sitemap.xml\n',encoding='utf-8')
+    (root/'sitemap_index.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>'+html.escape(origin+'/sitemap.xml')+'</loc></sitemap></sitemapindex>\n',encoding='utf-8')
+    (root/'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {origin}/sitemap_index.xml\n',encoding='utf-8')
     return origin
 
 if __name__=='__main__':
