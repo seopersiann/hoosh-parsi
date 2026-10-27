@@ -193,35 +193,44 @@
 .full-plan-link{display:table;margin:28px auto 0;text-align:center}
 .detailed-plans{margin-block:10px 60px}
 .detailed-plans .comparison-heading h2{font-size:26px;line-height:1.9;margin:0 0 10px;color:#e0efff}
-.mobile-plan-comparison{display:none}
 @media(max-width:1000px){#services-summary.services-relocated{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){
- .detailed-plans .comparison-scroll{display:none}
- .mobile-plan-comparison{display:grid;gap:14px;padding:0 20px 22px}
- .mobile-comparison-hint{font-size:13px;line-height:2.1;color:#a8c1df;margin:0 0 3px}
- .mobile-plan{min-width:0;border:1px solid #477ba74d;border-radius:12px;background:linear-gradient(145deg,#112b48,#0b182a);overflow:hidden}
- .mobile-plan summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px;cursor:pointer;list-style:none}
- .mobile-plan summary::-webkit-details-marker{display:none}
- .mobile-plan-heading{min-width:0;display:grid;gap:5px}
- .mobile-plan-heading strong{font-size:16px;line-height:1.9;color:#edf6ff}
- .mobile-plan-price{font-size:14px;line-height:1.9;color:#6ed5ff}
- .mobile-plan-toggle{flex:0 0 28px;height:28px;display:grid;place-items:center;font-size:23px;line-height:1;border-radius:50%;background:#1e56814a;color:#8bdcff;transition:transform .2s}
- .mobile-plan[open] .mobile-plan-toggle{transform:rotate(45deg)}
- .mobile-plan[open] summary{border-bottom:1px solid #477ba74d;background:#174c6e33}
- .mobile-plan dl{margin:0;padding:0 18px}
- .mobile-plan dl>div{padding-block:13px;border-bottom:1px solid #6387af26}
- .mobile-plan dl>div:last-child{border:0}
- .mobile-plan dt{font-size:12px;line-height:2;color:#9eb8d5;margin-bottom:3px}
- .mobile-plan dd{font-size:14px;line-height:2.1;color:#eef5ff;margin:0;overflow-wrap:anywhere}
- .mobile-plan>.button{display:flex;width:calc(100% - 36px);margin:6px 18px 20px;padding:12px;font-size:13px}
  .detailed-plans .comparison-heading h2{font-size:22px}
  .detailed-plans .comparison-note{font-size:12px;line-height:2.1}
  #services-summary.services-relocated{margin-block:8px 42px;gap:18px}
 }
-@media(max-width:600px){#services-summary.services-relocated{grid-template-columns:minmax(0,1fr)}#services-summary .service-card{min-height:225px;padding:25px 22px 16px}.mobile-plan-comparison{padding-inline:16px}}
-@media(prefers-reduced-motion:reduce){.mobile-plan-toggle{transition:none}}
+@media(max-width:600px){#services-summary.services-relocated{grid-template-columns:minmax(0,1fr)}#services-summary .service-card{min-height:225px;padding:25px 22px 16px}}
+
+
+/* Store plan anchors retain the existing motion preference and visual system. */
+#plans-comparison{scroll-margin-block-start:100px}
+#pricing .price-card h3{white-space:nowrap;font-size:clamp(19px,1.8vw,23px)}
+#pricing .price-card .button{min-height:48px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* Coupon article keeps codes selectable and comfortably sized on small screens. */
 .coupon-code{margin-block:18px;padding:18px 22px;border:1px solid #328bd766;border-radius:12px;background:linear-gradient(145deg,#12355a,#101a2b)}
 .coupon-code h3{margin:0 0 8px;font-size:24px;letter-spacing:1px;color:#70d6ff;user-select:all}
 .coupon-code p{margin:0}
+
+/* One semantic comparison table on every screen, scoped to store pricing. */
+#plans-comparison .comparison-scroll{display:block;max-inline-size:100%;min-inline-size:0;overflow-x:auto;overscroll-behavior-inline:contain}
+#plans-comparison table{table-layout:fixed;min-inline-size:860px;inline-size:100%;border-collapse:collapse}
+#plans-comparison col{inline-size:24.666%}
+#plans-comparison .comparison-feature-col{inline-size:26%}
+#plans-comparison th,#plans-comparison td{inline-size:auto;vertical-align:middle;font-size:13px;line-height:2;text-align:center;padding:16px 18px}
+#plans-comparison tbody th{text-align:start;color:#c6dbf3}
+#plans-comparison thead th{padding-block:22px;white-space:nowrap}
+#plans-comparison .comparison-plan-name{display:block;font-size:16px;color:#f2f8ff;white-space:nowrap}
+#plans-comparison .comparison-plan-price{display:block;margin-block-start:6px;font-size:14px;font-weight:500;color:#83d6ff;white-space:nowrap}
+#plans-comparison tr>:nth-child(3){background-color:#1468a114}
+#plans-comparison thead th:nth-child(3){background-color:#164472}
+#plans-comparison tfoot td{padding-block:22px;background-color:#14283e55}
+#plans-comparison tfoot .button{inline-size:100%;min-block-size:48px;padding:12px;font-size:13px;white-space:nowrap}
+#plans-comparison .comparison-phone{display:block;margin-block-start:10px;color:#a9c5e6;font-size:12px}
+.comparison-mobile-hint{display:none}
+@media(max-width:760px){
+ #plans-comparison .comparison-mobile-hint{display:block;margin:0;padding:0 22px 18px;font-size:12px;line-height:2;color:#a8c1df}
+ #plans-comparison th,#plans-comparison td{font-size:13px;padding:15px 16px}
+ #plans-comparison .comparison-heading p{font-size:13px;line-height:2.1}
+}

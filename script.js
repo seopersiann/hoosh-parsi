@@ -55,9 +55,9 @@ if (filters) {
 }
 // A plan link only prefills an on-device brief. No request or purchase is submitted.
 const plans = {
-  starter: { name: 'شروع حرفه‌ای', price: '۱۸ میلیون تومان', service: 'وب‌سایت شرکتی و خدماتی' },
-  corporate: { name: 'رشد کسب‌وکار', price: '۳۰ میلیون تومان', service: 'وب‌سایت شرکتی و خدماتی' },
-  store: { name: 'فروشگاه پیشرفته', price: '۵۰ میلیون تومان', service: 'فروشگاه اینترنتی' }
+  starter: { name: 'فروشگاه اقتصادی', price: '۱۸ میلیون تومان', service: 'فروشگاه اینترنتی' },
+  corporate: { name: 'فروشگاه حرفه‌ای', price: '۳۰ میلیون تومان', service: 'فروشگاه اینترنتی' },
+  store: { name: 'فروشگاه اختصاصی', price: '۵۰ میلیون تومان', service: 'فروشگاه اینترنتی' }
 };
 const planKey = new URLSearchParams(location.search).get('plan');
 const chosenPlan = Object.prototype.hasOwnProperty.call(plans, planKey) ? plans[planKey] : null;
