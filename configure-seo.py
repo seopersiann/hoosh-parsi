@@ -54,7 +54,6 @@ def configure(site_url, root):
         raise ValueError('Use the production HTTP or HTTPS origin, with no path, port, credentials or parameters.')
     origin = f'{parsed.scheme}://{parsed.hostname.encode("idna").decode("ascii")}'
     pages = {'index.html':''}
-    pages.update({path.name:path.name for path in sorted(root.glob('*.html')) if path.name != 'index.html' and '<meta name="robots" content="noindex, follow">' not in path.read_text(encoding='utf-8')})
     pages.update({path.relative_to(root).as_posix():path.parent.relative_to(root).as_posix()+'/' for path in sorted(root.glob('*/index.html'))})
     for filename, suffix in pages.items():
         path = root/filename
@@ -67,13 +66,13 @@ def configure(site_url, root):
             old_origins.add(f'{previous_url.scheme}://{previous_url.netloc}')
         project_images = {
             'کدهای-تخفیف-نت-افراز-netafraz-خرید-هاست/index.html': ('assets/netafraz-promo.webp',1000,518,'نت افراز؛ راهنمای کد تخفیف خرید هاست'),
-            'article-wordpress-vs-custom.html': ('assets/wordpress-vs-custom.jpg',1536,1024,'تصویر مفهومی مقایسهٔ طراحی سایت وردپرسی و توسعهٔ اختصاصی'),
-            'article-tablo-decor-case-study.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
-            'project-tablo-decor.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
-            'project-new-bikini.html': ('assets/new-bikini-visual.webp',1200,675,'تصویر معرفی مجموعهٔ لوازم شنا از سایت نیو بیکینی'),
-            'project-shiraz-yadak.html': ('assets/shiraz-yadak-storefront.png',1265,712,'تصویر واقعی فروشگاه شیراز یدک'),
-            'project-perfume-shop.html': ('assets/perfume-storefront.png',1253,705,'تصویر پیش‌نمایش فروشگاه عطر و ادکلن'),
-            'project-nasim-gold.html': ('assets/nasim-gold-storefront.png',1265,712,'تصویر واقعی سایت نسیم گلد')
+            'article-wordpress-vs-custom/index.html': ('assets/wordpress-vs-custom.jpg',1536,1024,'تصویر مفهومی مقایسهٔ طراحی سایت وردپرسی و توسعهٔ اختصاصی'),
+            'article-tablo-decor-case-study/index.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
+            'project-tablo-decor/index.html': ('assets/tablo-decor-storefront.png',1265,889,'تصویر واقعی فروشگاه تابلو دکور'),
+            'project-new-bikini/index.html': ('assets/new-bikini-visual.webp',1200,675,'تصویر معرفی مجموعهٔ لوازم شنا از سایت نیو بیکینی'),
+            'project-shiraz-yadak/index.html': ('assets/shiraz-yadak-storefront.png',1265,712,'تصویر واقعی فروشگاه شیراز یدک'),
+            'project-perfume-shop/index.html': ('assets/perfume-storefront.png',1253,705,'تصویر پیش‌نمایش فروشگاه عطر و ادکلن'),
+            'project-nasim-gold/index.html': ('assets/nasim-gold-storefront.png',1265,712,'تصویر واقعی سایت نسیم گلد')
         }
         social_image,social_width,social_height,social_alt = project_images.get(filename,('assets/office-laptop.jpg',1536,1024,'تصویر مفهومی لپ‌تاپ با هویت بصری سرمه‌ای و آبی هوشمند پارسی'))
         source = re.sub(r'\s*<!-- production-seo:start -->.*?<!-- production-seo:end -->', '', source, flags=re.S)
@@ -99,7 +98,7 @@ def configure(site_url, root):
             elif entry['@type']=='Service':
                 entry.update({'@id':canonical+'#service','url':canonical,'provider':{'@id':origin+'/#organization'}})
             elif entry['@type']=='VideoObject':
-                entry.update({'@id':origin+'/#web-design-video','publisher':{'@id':origin+'/#organization'},'url':origin+'/video-web-design.html'})
+                entry.update({'@id':origin+'/#web-design-video','publisher':{'@id':origin+'/#organization'},'url':origin+'/video-web-design/'})
             elif entry['@type']=='CreativeWork':
                 entry.update({'creator':{'@id':origin+'/#organization'}})
             elif entry['@type']=='Article':
@@ -109,7 +108,7 @@ def configure(site_url, root):
         if filename != 'index.html':
             items=[{'@type':'ListItem','position':1,'name':'خانه','item':origin+'/'}]
             if filename.startswith('article-') or filename == 'کدهای-تخفیف-نت-افراز-netafraz-خرید-هاست/index.html':
-                items.append({'@type':'ListItem','position':2,'name':'مقالات و راهنماها','item':origin+'/articles.html'})
+                items.append({'@type':'ListItem','position':2,'name':'مقالات و راهنماها','item':origin+'/articles/'})
             if filename.startswith('project-'):
                 items.append({'@type':'ListItem','position':2,'name':'نمونه‌های طراحی','item':origin+'/#portfolio'})
             if filename.startswith('service-'):
