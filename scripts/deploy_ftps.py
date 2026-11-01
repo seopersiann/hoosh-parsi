@@ -102,16 +102,21 @@ def atomic_upload(ftp, root, relative, stream, directories):
 
 def run(mode, ftp_factory=VerifiedFTP):
     host, port, user, password, target = settings()
-    ftp = ftp_factory(context=ssl.create_default_context(), timeout=45, encoding='utf-8')
+    ftp = ftp_factory(context=ssl.create_default_context(), timeout=20, encoding='utf-8')
     try:
+        print("FTPS_STAGE: connecting control socket", flush=True)
         ftp.connect(host, port)
+        print("FTPS_STAGE: control connected; verifying TLS and login", flush=True)
         ftp.login(user, password)
+        print("FTPS_STAGE: authenticated; protecting data channel", flush=True)
         ftp.prot_p()
         ftp.set_pasv(True)
+        print("FTPS_STAGE: checking public_html", flush=True)
         ftp.cwd(target)
         root = ftp.pwd().rstrip('/')
         if not root.endswith('/public_html'):
             raise ValueError('The server did not confirm the expected public_html destination.')
+        print("FTPS_STAGE: testing encrypted passive directory listing", flush=True)
         count = len(ftp.nlst())  # Exercise the encrypted passive data channel; do not log host filenames.
         print(f'CHECK_OK: verified FTPS login, encrypted data channel and public_html; {count} entries present.', flush=True)
         if mode == 'check':
