@@ -15,3 +15,7 @@ __pycache__/
 !.env.example
 .vscode/
 .idea/
+
+# Public-only temporary hosting export
+/_hosting_release/
+/_hosting_backup/

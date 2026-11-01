@@ -1,0 +1,51 @@
+name: Publish to hosting
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Check connection only, or publish website files
+        type: choice
+        options: [check, deploy]
+        default: check
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hoosh-parsi-hosting
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout public website source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, immutable revision
+        with:
+          persist-credentials: false
+      - name: Validate publication safety checks
+        run: python3 -m unittest discover -s tests -v
+      - name: Build public-only release
+        run: python3 scripts/build_hosting_release.py
+      - name: Verify FTPS destination and optionally publish
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_MODE: ${{ inputs.mode || 'check' }}
+        run: python3 scripts/deploy_ftps.py --mode "$DEPLOY_MODE"
+      - name: Keep previous public files for recovery
+        if: ${{ always() && hashFiles('_hosting_backup/**') != '' }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4, immutable revision
+        with:
+          name: hosting-backup-${{ github.run_id }}
+          path: _hosting_backup/
+          retention-days: 30
+          if-no-files-found: ignore
