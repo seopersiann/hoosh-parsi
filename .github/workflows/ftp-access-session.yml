@@ -17,7 +17,7 @@ jobs:
   session:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Checkout website source
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
@@ -40,7 +40,7 @@ jobs:
                   continue
           if not ip:
               raise SystemExit('Could not determine this runner IPv4 address.')
-          deadline = datetime.now(timezone.utc) + timedelta(minutes=10)
+          deadline = datetime.now(timezone.utc) + timedelta(minutes=25)
           iran = deadline.astimezone(ZoneInfo('Asia/Tehran'))
           record = {'ip': ip, 'deadline_utc': deadline.isoformat(), 'deadline_iran': iran.isoformat(), 'run_id': os.environ['GITHUB_RUN_ID']}
           with open('runner-ip.json', 'w') as f:
@@ -50,13 +50,24 @@ jobs:
           print(f'RUNNER_PUBLIC_IP={ip}', flush=True)
           print(f'ALLOWLIST_DEADLINE_IRAN={iran:%H:%M}', flush=True)
           PY
+      - name: Test current access immediately without changing host files
+        id: probe
+        continue-on-error: true
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: python3 scripts/deploy_ftps.py --mode check
       - name: Publish IP metadata while this runner stays alive
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: ftp-session-ip-${{ steps.network.outputs.ip }}-until-${{ steps.network.outputs.until }}
+          name: ftp-session-ip-${{ steps.network.outputs.ip }}-until-${{ steps.network.outputs.until }}-probe-${{ steps.probe.outcome }}
           path: runner-ip.json
           retention-days: 1
       - name: Keep the same runner alive for allowlisting
+        if: steps.probe.outcome != 'success'
         run: |
           python3 - <<'PY'
           import json, time
