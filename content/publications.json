@@ -10,7 +10,9 @@
       "imagePrompt": "content/image-prompts/cart-abandonment.txt",
       "verificationStatus": "verified",
       "verifiedAt": "2026-11-07T16:16:45.996494+00:00",
-      "todoistCompleted": true
+      "todoistCompleted": true,
+      "todoistDeleted": true,
+      "todoistDeletedAt": "2026-11-07T17:14:27.621587+00:00"
     }
   ]
 }
