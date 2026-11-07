@@ -19,3 +19,10 @@ __pycache__/
 # Public-only temporary hosting export
 /_hosting_release/
 /_hosting_backup/
+
+# Private DirectAdmin configuration and deployment runtime (never commit).
+/deploy/directadmin/config.php
+/deploy/directadmin/github-token.txt
+/deploy/directadmin/runtime/
+/deploy/directadmin/backups/
+/deploy/directadmin/*report*.json

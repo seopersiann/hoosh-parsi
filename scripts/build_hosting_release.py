@@ -13,7 +13,7 @@ def public_file(name):
     path = PurePosixPath(name)
     if not path.parts or any(part.startswith('.') for part in path.parts):
         return False
-    if path.parts[0] in {'scripts', 'deliverables', 'tests'}:
+    if path.parts[0] in {'scripts', 'deliverables', 'tests', 'deploy'}:
         return False
     if path.parts[0] == 'assets':
         return True

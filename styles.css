@@ -234,3 +234,44 @@
  #plans-comparison th,#plans-comparison td{font-size:13px;padding:15px 16px}
  #plans-comparison .comparison-heading p{font-size:13px;line-height:2.1}
 }
+
+/* Local education: retain the original group photo without cropping faces. */
+.seminar-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:38px;align-items:center;padding:32px;border:1px solid #328bd747;border-radius:24px;background:radial-gradient(ellipse at 100% 0,#0066ff16,transparent 65%),linear-gradient(145deg,#101e33,#0b1424);box-shadow:0 18px 48px #0002}
+.seminar-content,.seminar-photo{min-inline-size:0}
+.seminar-content h2{margin:0 0 20px;font-size:clamp(24px,2.5vw,32px);line-height:1.8}
+.seminar-content h2 span{color:var(--cyan)}
+.seminar-content>p:not(.section-kicker){margin:0 0 16px;color:var(--muted);font-size:15px;line-height:2.2}
+.seminar-content .text-link{display:inline-block;margin-block-start:6px;line-height:2}
+.seminar-photo{margin:0;overflow:hidden;border:1px solid #56abff40;border-radius:16px;background:#081322}
+.seminar-photo img{display:block;inline-size:100%;block-size:auto;aspect-ratio:1200/702}
+.seminar-photo figcaption{padding:12px 16px;color:#bbcee5;font-size:12px;line-height:2;text-align:center}
+@media(max-width:1050px){.seminar-panel{gap:24px;padding:24px}}
+@media(max-width:760px){
+ .seminar-panel{grid-template-columns:minmax(0,1fr);gap:24px;padding:18px;border-radius:20px}
+ .seminar-content h2{font-size:24px;margin-block-end:16px}
+ .seminar-content>p:not(.section-kicker){font-size:14px;line-height:2.15}
+ .seminar-content .section-kicker,.seminar-photo figcaption{font-size:12px;line-height:2}
+ .seminar-content .text-link{font-size:13px}
+}
+
+/* Team introduction: full photo, responsive sources and styles scoped to this section. */
+.team-panel{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center;gap:48px;padding:32px;border:1px solid #328bd747;border-radius:24px;background:radial-gradient(ellipse at 100% 0,#0066ff18,transparent 65%),linear-gradient(145deg,#101e33,#0b1424);box-shadow:0 18px 48px #0002}
+.team-content,.team-photo{min-inline-size:0}
+.team-content h2{margin:0 0 24px;font-size:clamp(25px,2.7vw,34px);line-height:1.9}
+.team-content h2 span{color:var(--cyan)}
+.team-content>p:not(.section-kicker){margin:0 0 18px;color:var(--muted);font-size:15px;line-height:2.2}
+.team-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-block-start:24px}
+.team-actions .button{min-block-size:48px;font-size:13px}
+.team-actions .text-link{font-size:13px;line-height:2}
+.team-photo{inline-size:100%;max-inline-size:460px;justify-self:center;margin:0;overflow:hidden;border:1px solid #56abff40;border-radius:18px;background:#081322}
+.team-photo img{display:block;inline-size:100%;block-size:auto;aspect-ratio:1000/1078}
+.team-photo figcaption{padding:12px 16px;color:#bbcee5;font-size:12px;line-height:2;text-align:center}
+@media(max-width:1050px){.team-panel{gap:28px;padding:24px}}
+@media(max-width:760px){
+ .team-panel{grid-template-columns:minmax(0,1fr);gap:24px;padding:18px;border-radius:20px}
+ .team-content h2{font-size:25px;margin-block-end:18px}
+ .team-content>p:not(.section-kicker){font-size:14px;line-height:2.15}
+ .team-content .section-kicker,.team-photo figcaption{font-size:12px;line-height:2}
+ .team-actions{margin-block-start:20px;gap:14px}
+ .team-photo{max-inline-size:460px}
+}
