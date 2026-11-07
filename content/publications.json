@@ -8,7 +8,9 @@
       "date": "2026-11-07",
       "image": "/assets/cart-abandonment.webp",
       "imagePrompt": "content/image-prompts/cart-abandonment.txt",
-      "verificationStatus": "hosting_403_pending_permission_fix"
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-11-07T16:16:45.996494+00:00",
+      "todoistCompleted": true
     }
   ]
 }
