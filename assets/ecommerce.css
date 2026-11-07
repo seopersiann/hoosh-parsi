@@ -1,0 +1,87 @@
+/* Storefront service page: scoped additions to the existing Persian visual system. */
+.ecommerce-page main :is(section[id],h2[id]){scroll-margin-block-start:100px}
+.ecommerce-page .breadcrumbs{flex-wrap:wrap;line-height:2.2}
+.ec-hero{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);gap:52px;align-items:center;padding-block:40px 58px}
+.ec-hero-copy,.ec-showcase{min-inline-size:0}
+.ec-hero h1{margin:12px 0 20px;font-size:clamp(34px,3.8vw,52px);line-height:1.85;letter-spacing:-.8px}
+.ec-hero h1 span{color:#29cfff;background:linear-gradient(110deg,#0066ff,#42d9ff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.ec-lead{margin:0;color:var(--muted);font-size:16px;line-height:2.2}
+.ec-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-block:26px 20px}
+.ec-hero-actions .button{min-block-size:48px;font-size:13px;padding:12px 18px}
+.ec-assurances{display:flex;flex-wrap:wrap;gap:10px 18px;list-style:none;padding:0;margin:0;color:#bcd2ea;font-size:12px;line-height:2}
+.ec-assurances li::before{content:'•';color:var(--cyan);margin-inline-end:7px}
+.ec-showcase{margin:0;border:1px solid #54aeff55;border-radius:18px;background:#101c30;overflow:hidden;box-shadow:0 24px 70px #0005,0 0 55px #0066ff16}
+.ec-window{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:13px 17px;border-block-end:1px solid #4785bd44;font-size:11px;color:#b9d5ee;background:linear-gradient(110deg,#163657,#0c182c)}
+.ec-window i{inline-size:7px;block-size:7px;border-radius:50%;background:#29cfff}
+.ec-window bdi{margin-inline-start:auto;color:#81a9d0}
+.ec-showcase>a{display:block}
+.ec-showcase img{display:block;inline-size:100%;block-size:auto;aspect-ratio:1265/889}
+.ec-showcase figcaption{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:16px;font-size:13px}
+.ec-showcase .text-link{font-size:12px}
+.ec-page-nav{display:flex;gap:10px;flex-wrap:wrap;padding-block:18px;border-block:1px solid #6c91be30}
+.ec-page-nav a{padding:8px 15px;border-radius:8px;background:#10223a;border:1px solid #5584ba33;color:#c8dcf1;font-size:13px;line-height:2;min-block-size:44px}
+.ec-page-nav a:hover{border-color:#23cfff80;color:#fff}
+.ec-intro{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:60px;align-items:start}
+.ec-intro h2,.ec-panel h2,.ec-ready h2{font-size:clamp(25px,2.6vw,33px);line-height:1.9;margin:0 0 20px}
+.ec-intro h2 span,.ec-panel h2 span{color:var(--cyan)}
+.ec-intro p:not(.section-kicker),.ec-panel p:not(.section-kicker),.ec-ready p:not(.section-kicker){font-size:15px;line-height:2.2;color:var(--muted);margin-block:0 16px}
+.ec-panel{padding:32px;border:1px solid #5182b844;border-radius:20px;background:radial-gradient(ellipse at 100% 0,#0066ff15,transparent 65%),linear-gradient(145deg,#112139,#0c1525)}
+.ec-panel h3,.ec-cost-note h3{font-size:20px;line-height:1.9;margin:0 0 14px}
+.ec-cost-note{padding:28px 32px;border-inline-start:3px solid #23cfff;border-radius:16px;background:#11223a80}
+.ec-cost-note>h2{font-size:23px;line-height:1.9;margin:0 0 22px}
+.ec-cost-grid,.ec-two-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.ec-cost-grid p{font-size:14px;line-height:2.2;color:var(--muted);margin:0}
+.ec-small{font-size:13px;line-height:2.2;color:#b5cde4;margin-block:22px 0;padding-block-start:18px;border-block-start:1px solid #739bc330}
+.ec-small a{color:#76ceff;text-decoration:underline;text-underline-offset:5px}
+.ec-more{display:table;margin-block-start:25px;font-size:14px;line-height:2}
+.ecommerce-page .portfolio-info p{font-size:14px;line-height:2.1}
+.ec-features p{font-size:14px;line-height:2.1}
+.ec-seo-panel,.ec-handover{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:42px;align-items:start}
+.ec-checklist{list-style:none;padding:0;margin:0;display:grid;gap:18px}
+.ec-checklist li{position:relative;padding-inline-start:23px;font-size:14px;line-height:2.1;color:var(--muted)}
+.ec-checklist li::before{content:'✓';position:absolute;inset-inline-start:0;color:var(--cyan)}
+.ec-checklist strong{display:block;color:#e1efff;font-size:15px;margin-block-end:5px}
+.ec-checklist span{display:block}
+.ec-two-cards>article{min-inline-size:0}
+.ec-process{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 34px}
+.ec-process li{padding:24px;border:1px solid #5182b833;border-radius:14px;background:#101d30;min-inline-size:0}
+.ec-process p{font-size:14px;line-height:2.1}
+.ec-process h3{font-size:19px;line-height:1.9}
+.ec-local-contact{border-inline-start:1px solid #6082af40;padding-inline-start:30px}
+.ec-local-contact address{font-style:normal;font-size:15px;line-height:2.2;margin-block-end:18px;color:#d4e4f6}
+.ec-local-contact .ec-phone{display:inline-block;color:#67cfff;font-size:24px;font-weight:700;line-height:2;margin-block-end:8px}
+.ecommerce-page .faq-list summary{font-size:15px;line-height:2.1;gap:14px}
+.ecommerce-page .faq-list details p{font-size:14px;line-height:2.2;color:var(--muted)}
+.ec-ready{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.ecommerce-page .final-cta p{max-inline-size:700px;margin-inline:auto;line-height:2.1;font-size:15px}
+.ecommerce-page .final-cta .ec-more{margin-inline:auto}
+@media(max-width:1100px){.ec-hero{gap:30px}.ec-window bdi{display:none}.ec-intro{gap:32px}.ec-seo-panel,.ec-handover{gap:28px}}
+@media(max-width:760px){
+ .ec-hero{grid-template-columns:minmax(0,1fr);gap:32px;padding-block:25px 34px}
+ .ec-hero h1{font-size:clamp(29px,7.6vw,40px);line-height:1.9;margin-block:12px 18px;letter-spacing:-.5px}
+ .ec-lead{font-size:15px;line-height:2.15}
+ .ec-hero-actions{gap:10px;margin-block:22px 16px}
+ .ec-hero-actions .button{font-size:13px;flex:1 1 200px;justify-content:center}
+ .ec-assurances{font-size:12px;gap:8px 14px}
+ .ec-window{font-size:11px;padding:11px 13px}
+ .ec-showcase figcaption{padding:13px;font-size:13px}
+ .ec-showcase .text-link{font-size:12px}
+ .ec-page-nav{gap:8px;padding-block:16px}
+ .ec-page-nav a{font-size:12px;padding:7px 12px}
+ .ec-intro,.ec-seo-panel,.ec-handover,.ec-ready,.ec-two-cards,.ec-cost-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+ .ec-intro h2,.ec-panel h2,.ec-ready h2{font-size:25px;line-height:1.9}
+ .ec-intro p:not(.section-kicker),.ec-panel p:not(.section-kicker),.ec-ready p:not(.section-kicker){font-size:14px;line-height:2.2}
+ .ec-panel{padding:22px;border-radius:16px}
+ .ec-cost-note{padding:23px 20px}
+ .ec-cost-note>h2{font-size:22px}
+ .ec-cost-note h3,.ec-panel h3{font-size:19px}
+ .ec-cost-grid p,.ec-checklist li{font-size:14px}
+ .ec-small{font-size:13px}
+ .ec-process{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+ .ec-process li{padding:20px}
+ .ec-local-contact{padding-inline-start:0;padding-block-start:22px;border-inline-start:0;border-block-start:1px solid #6082af40}
+ .ecommerce-page .faq-list summary{font-size:14px}
+ .ecommerce-page .faq-list details p{font-size:14px}
+ .ecommerce-page .final-cta p{font-size:14px}
+}
+@media(max-width:480px){.ec-process{grid-template-columns:minmax(0,1fr)}.ec-showcase figcaption{align-items:start;flex-direction:column}.ec-hero-actions .button{flex-basis:100%}}
