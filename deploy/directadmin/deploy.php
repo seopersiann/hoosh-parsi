@@ -144,7 +144,13 @@ final class HooshDeploy
     private function installFile(string $source,string $path,int $mode=0644): void {
         $target=$this->target($path);$parent=dirname($target);
         if (!is_dir($parent)) {
-            if (!mkdir($parent,0755,true) && !is_dir($parent)) throw new RuntimeException('Cannot create public directory.');
+            // Private runtime uses 0077; public routes must remain traversable by the web server.
+            $privateMask = umask(0022);
+            try {
+                if (!mkdir($parent,0755,true) && !is_dir($parent)) throw new RuntimeException('Cannot create public directory.');
+            } finally {
+                umask($privateMask);
+            }
         }
         $tmp=$parent.'/.hoosh-deploy-'.bin2hex(random_bytes(8));
         if (!copy($source,$tmp)) throw new RuntimeException('Cannot stage destination file.');
