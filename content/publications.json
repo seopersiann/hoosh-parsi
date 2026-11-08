@@ -21,8 +21,11 @@
       "date": "2026-11-08",
       "image": "/assets/google-not-indexed.webp",
       "imagePrompt": "content/image-prompts/google-not-indexed.txt",
-      "verificationStatus": "pending_host_verification",
-      "todoistDeleted": false
+      "verificationStatus": "verified",
+      "todoistDeleted": true,
+      "verifiedAt": "2026-11-08T08:06:33.632352+00:00",
+      "todoistDeletedAt": "2026-11-08T08:06:33.632352+00:00",
+      "verificationNotes": "Article and featured image returned HTTP 200 and matched local files byte-for-byte. Static metadata, links, anchors and sitemap checks passed. Browser visual QA unavailable: no connected browser."
     }
   ]
 }
