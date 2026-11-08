@@ -13,6 +13,16 @@
       "todoistCompleted": true,
       "todoistDeleted": true,
       "todoistDeletedAt": "2026-11-07T17:14:27.621587+00:00"
+    },
+    {
+      "taskId": "6hwpMCRjfVG8cmfX",
+      "title": "چرا سایت در گوگل نمایش داده نمی‌شود؟ چک‌لیست بررسی یک سایت تازه‌تأسیس",
+      "url": "https://hoosh-parsi.ir/article-google-not-indexed/",
+      "date": "2026-11-08",
+      "image": "/assets/google-not-indexed.webp",
+      "imagePrompt": "content/image-prompts/google-not-indexed.txt",
+      "verificationStatus": "pending_host_verification",
+      "todoistDeleted": false
     }
   ]
 }
