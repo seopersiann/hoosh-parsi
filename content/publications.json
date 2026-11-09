@@ -26,6 +26,16 @@
       "verifiedAt": "2026-11-08T08:06:33.632352+00:00",
       "todoistDeletedAt": "2026-11-08T08:06:33.632352+00:00",
       "verificationNotes": "Article and featured image returned HTTP 200 and matched local files byte-for-byte. Static metadata, links, anchors and sitemap checks passed. Browser visual QA unavailable: no connected browser."
+    },
+    {
+      "taskId": "6hwpM9hC6R8GpJ5X",
+      "title": "سایت ریسپانسیو چیست؟ ۱۰ ایراد رایج در نمایش سایت با موبایل",
+      "url": "https://hoosh-parsi.ir/article-responsive-website/",
+      "date": "2026-11-09",
+      "image": "/assets/responsive-website.webp",
+      "imagePrompt": "content/image-prompts/responsive-website.txt",
+      "verificationStatus": "pending_host_verification",
+      "todoistDeleted": false
     }
   ]
 }
