@@ -34,8 +34,11 @@
       "date": "2026-11-09",
       "image": "/assets/responsive-website.webp",
       "imagePrompt": "content/image-prompts/responsive-website.txt",
-      "verificationStatus": "pending_host_verification",
-      "todoistDeleted": false
+      "verificationStatus": "verified",
+      "todoistDeleted": true,
+      "verifiedAt": "2026-11-09T19:11:35.304487+00:00",
+      "todoistDeletedAt": "2026-11-09T19:11:35.304487+00:00",
+      "verificationNotes": "Article and featured image HTTP 200, byte-for-byte match. Static metadata, links, headings, anchors and sitemap passed. Browser QA: 390px mobile and 1280px desktop, no horizontal overflow, image loaded, 15px mobile body text, menu toggled and TOC anchor hash changed."
     }
   ]
 }
