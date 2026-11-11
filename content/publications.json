@@ -47,8 +47,11 @@
       "date": "2026-11-11",
       "image": "/assets/homepage-sections.webp",
       "imagePrompt": "content/image-prompts/homepage-sections.txt",
-      "verificationStatus": "pending_host_verification",
-      "todoistDeleted": false
+      "verificationStatus": "verified",
+      "todoistDeleted": false,
+      "verifiedAt": "2026-11-11T06:03:09.012480+00:00",
+      "todoistDeletionStatus": "awaiting_explicit_confirmation",
+      "verificationNotes": "Live HTTPS article and both WebP sizes matched the published files byte-for-byte. Heading, links, anchors, metadata, JSON-LD, sitemap and listing checks passed. Visual browser preview was unavailable."
     }
   ]
 }
