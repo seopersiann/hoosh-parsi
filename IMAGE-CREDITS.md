@@ -11,3 +11,6 @@
 - assets/netafraz-promo.webp: تصویر ارسالی صاحب سایت با نام netafraz-promo-code1 (1).jpg؛ برای مقالهٔ معرفی کدهای تخفیف نت افراز، تبدیل به WebP با ابعاد ۱۰۰۰×۵۱۸.
 
 - assets/web-design-shiraz.webp: تصویر ارسالی صاحب سایت، عین فایل اصلی، برای کاور ویدیوی هیرو و صفحهٔ ویدیو.
+
+- assets/joghd-app-icon.webp و assets/joghd-app-screen.webp: آیکون و تصویر رسمی جغد از https://cafebazaar.ir/app/com.smartifytech.co.uk.joghd، دریافت ۱۸ نوامبر ۲۰۲۶؛ تبدیل به WebP.
+- assets/quicknotes-app-icon.webp و assets/quicknotes-app-screen.webp: آیکون و تصویر رسمی یادداشت سریع از https://cafebazaar.ir/app/com.vp.seops.quicknotes، دریافت ۱۸ نوامبر ۲۰۲۶؛ تبدیل به WebP.
