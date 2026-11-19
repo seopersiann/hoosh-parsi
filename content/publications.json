@@ -78,15 +78,17 @@
       "title": "بهترین هاست ایرانی وردپرس؛ مقایسه ۶ شرکت و کد تخفیف نت‌افراز",
       "url": "https://hoosh-parsi.ir/best-iranian-wordpress-hosting/",
       "date": "2026-11-20",
-      "image": "/assets/iranian-wordpress-hosting-cover.webp",
-      "imageSource": "Composite of six real homepage screenshots requested by the user; no generated brand or interface imagery.",
+      "image": "/assets/iranian-wordpress-hosting-cover-v2.webp",
+      "imageSource": "Original image_gen illustration matching the existing article covers: Iranian flag, hosting server towers and cloud symbol. Real provider screenshots remain in their original article sections.",
       "verificationStatus": "verified",
       "todoistRequired": false,
       "todoistDeleted": null,
       "notes": "User-specified order and three Netafraz codes preserved verbatim. Provider primary product pages reviewed; no performance testing or coupon redemption claimed. Screenshots captured via CUA and converted to responsive WebP.",
       "verifiedAt": "2026-11-19T21:15:50.147302+00:00",
       "publicationCommit": "ad7a0328043221373550d4af655b99c0e51c0a2b",
-      "verificationNotes": "All 19 public article, CSS, image, home, listing and sitemap files returned HTTPS 200 and matched the publication byte-for-byte. Browser QA at 320px, 390px and desktop passed; 16px mobile prose, independent table scrolling, six provider images, all coupon codes, TOC anchors, metadata, FAQ and Article schema verified. Manual request; no Todoist task selected or modified."
+      "verificationNotes": "All 19 public article, CSS, image, home, listing and sitemap files returned HTTPS 200 and matched the publication byte-for-byte. Browser QA at 320px, 390px and desktop passed; 16px mobile prose, independent table scrolling, six provider images, all coupon codes, TOC anchors, metadata, FAQ and Article schema verified. Manual request; no Todoist task selected or modified.",
+      "imagePrompt": "content/image-prompts/iranian-wordpress-hosting-cover.txt",
+      "imageUpdateStatus": "pending_live_verification"
     }
   ]
 }
