@@ -52,6 +52,20 @@
       "verifiedAt": "2026-11-11T06:03:09.012480+00:00",
       "todoistDeletionStatus": "awaiting_explicit_confirmation",
       "verificationNotes": "Live HTTPS article and both WebP sizes matched the published files byte-for-byte. Heading, links, anchors, metadata, JSON-LD, sitemap and listing checks passed. Visual browser preview was unavailable."
+    },
+    {
+      "taskId": null,
+      "source": "manual-user-request",
+      "title": "چطور سرعت سایت طعم کارآفرینی رو بهینه‌سازی کردیم؟ تجربه واقعی یک پروژه",
+      "url": "https://hoosh-parsi.ir/article-tame-karafarini-speed/",
+      "date": "2026-11-19",
+      "image": "/assets/tame-karafarini-speed-desktop.webp",
+      "imageSource": "Screenshot of the real Lighthouse desktop report",
+      "evidence": "/assets/tame-karafarini-speed-results.json",
+      "verificationStatus": "pending",
+      "todoistRequired": false,
+      "todoistDeleted": true,
+      "notes": "Manual requested case study. PSI failed twice with Unable to resolve; explicitly identified local Lighthouse measurements and all three mobile runs are published. No Todoist task selected or changed."
     }
   ]
 }

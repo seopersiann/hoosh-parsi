@@ -14,3 +14,6 @@
 
 - assets/joghd-app-icon.webp و assets/joghd-app-screen.webp: آیکون و تصویر رسمی جغد از https://cafebazaar.ir/app/com.smartifytech.co.uk.joghd، دریافت ۱۸ نوامبر ۲۰۲۶؛ تبدیل به WebP.
 - assets/quicknotes-app-icon.webp و assets/quicknotes-app-screen.webp: آیکون و تصویر رسمی یادداشت سریع از https://cafebazaar.ir/app/com.vp.seops.quicknotes، دریافت ۱۸ نوامبر ۲۰۲۶؛ تبدیل به WebP.
+
+- assets/tame-karafarini-speed-desktop.webp و assets/tame-karafarini-speed-mobile.webp و نسخه‌های ۶۴۰ پیکسلی: اسکرین‌شات واقعی گزارش‌های محلی Lighthouse 13.6.0، آزمون صفحهٔ اصلی https://tamekarafarini.ir/ در ۱۹ نوامبر ۲۰۲۶. تصویر موبایل متعلق به اجرای دوم از سه اجراست.
+- assets/tame-karafarini-pagespeed-error.webp: اسکرین‌شات واقعی خطای دامنه در PageSpeed Insights در همان تاریخ؛ هیچ امتیاز موفقی از PSI دریافت نشد.

@@ -1,0 +1,30 @@
+/* Scoped presentation of the measured project evidence. */
+.speed-case-page .speed-featured{max-inline-size:1000px}
+.speed-case-page .speed-report{margin:0 0 30px}
+.speed-report>a{display:block;border:1px solid #668bbd55;border-radius:14px;overflow:hidden;background:#fff}
+.speed-report img{display:block;inline-size:100%;block-size:auto}
+.speed-report figcaption{font-size:13px;line-height:2.1;color:#afc3dc;margin-block-start:12px}
+.speed-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-block:24px}
+.speed-summary>div{padding:24px 18px;background:linear-gradient(145deg,#102a36,#0d1b2d);border:1px solid #20c99766;border-radius:16px;text-align:center}
+.speed-summary strong{display:block;color:#5de6aa;font-size:44px;line-height:1.4}
+.speed-summary strong span{display:block;font-size:14px;color:#c4d8e6;font-weight:500}
+.speed-summary p{margin:12px 0 0!important;color:#d6eaff!important;font-size:15px!important}
+.speed-metrics{min-inline-size:0;table-layout:fixed;font-size:14px}
+.speed-metrics th,.speed-metrics td{padding:12px 10px;overflow-wrap:break-word}
+.speed-metrics thead th:first-child{inline-size:46%}
+.speed-metrics tbody th{min-inline-size:0}
+.speed-table-wrap:focus-visible,.speed-evidence summary:focus-visible{outline:3px solid #23cfff;outline-offset:4px}
+.speed-evidence{border:1px solid #638fbd40;background:#10203a66;border-radius:12px;padding:18px;margin-block:22px}
+.speed-evidence summary{cursor:pointer;font-weight:700;font-size:15px;line-height:2;min-block-size:38px}
+.speed-evidence img{display:block;inline-size:100%;block-size:auto;border-radius:8px;margin-block:15px}
+.speed-case-page main section[id]{scroll-margin-block-start:105px}
+.speed-case-page .article-heading h1{line-height:1.9}
+@media(max-width:760px){
+ .speed-summary{gap:12px}
+ .speed-summary>div{padding:20px 10px}
+ .speed-summary strong{font-size:38px}
+ .speed-summary p{font-size:14px!important}
+ .speed-report figcaption{font-size:13px}
+ .speed-metrics{font-size:13px;line-height:2}
+ .speed-metrics th,.speed-metrics td{padding:11px 8px}
+}

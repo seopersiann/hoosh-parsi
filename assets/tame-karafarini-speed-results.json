@@ -1,0 +1,225 @@
+{
+  "testedUrl": "https://tamekarafarini.ir/",
+  "date": "2026-11-19",
+  "timezone": "Asia/Tehran",
+  "method": "Local Lighthouse CLI navigation audits with Chrome, not a PageSpeed Insights result.",
+  "lighthouseVersion": "13.6.0",
+  "pageSpeedInsights": {
+    "attempts": 2,
+    "result": "Unable to resolve https://tamekarafarini.ir/. Try checking the URL for validity.",
+    "score": null
+  },
+  "runs": [
+    {
+      "id": "desktop",
+      "fetchTime": "2026-11-19T08:30:13.253Z",
+      "finalUrl": "https://tamekarafarini.ir/",
+      "categories": {
+        "performance": 99,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "numericValue": 576.2139999999999,
+          "displayValue": "0.6 s",
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "numericValue": 576.2139999999999,
+          "displayValue": "0.6 s",
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms",
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0.016587185675970423,
+          "displayValue": "0.017",
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "numericValue": 1145.459693416656,
+          "displayValue": "1.1 s",
+          "unit": "millisecond"
+        }
+      },
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "runWarnings": []
+    },
+    {
+      "id": "mobile-1",
+      "fetchTime": "2026-11-19T08:29:35.517Z",
+      "finalUrl": "https://tamekarafarini.ir/",
+      "categories": {
+        "performance": 63,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "numericValue": 1667.7369999999996,
+          "displayValue": "1.7 s",
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "numericValue": 1667.7369999999996,
+          "displayValue": "1.7 s",
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "numericValue": 6653.716000000001,
+          "displayValue": "6,650 ms",
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0",
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "numericValue": 6361.589457238306,
+          "displayValue": "6.4 s",
+          "unit": "millisecond"
+        }
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runWarnings": []
+    },
+    {
+      "id": "mobile-2",
+      "fetchTime": "2026-11-19T08:30:51.432Z",
+      "finalUrl": "https://tamekarafarini.ir/",
+      "categories": {
+        "performance": 99,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "numericValue": 1656.674,
+          "displayValue": "1.7 s",
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "numericValue": 1656.674,
+          "displayValue": "1.7 s",
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms",
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0",
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "numericValue": 2293.66602999961,
+          "displayValue": "2.3 s",
+          "unit": "millisecond"
+        }
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runWarnings": []
+    },
+    {
+      "id": "mobile-3",
+      "fetchTime": "2026-11-19T08:31:03.599Z",
+      "finalUrl": "https://tamekarafarini.ir/",
+      "categories": {
+        "performance": 99,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "numericValue": 1655.8429999999998,
+          "displayValue": "1.7 s",
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "numericValue": 1655.8429999999998,
+          "displayValue": "1.7 s",
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms",
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0",
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "numericValue": 2309.630330000846,
+          "displayValue": "2.3 s",
+          "unit": "millisecond"
+        }
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "runWarnings": []
+    }
+  ],
+  "mobileMedianPerformance": 99,
+  "representativeMobileRun": 2,
+  "notes": [
+    "All three mobile results retained. The first run contained a long unattributable main-thread task. The reason for that task was not established.",
+    "No before/after performance comparison and no field-data/Core Web Vitals pass claim.",
+    "Indexability audit reported meta robots and X-Robots-Tag noindex/nofollow/noarchive."
+  ],
+  "observedImplementation": {
+    "deferScript": "/assets/store.js?v=5fe59e6b7fbb",
+    "belowFoldImagesUseLoadingLazy": true,
+    "heroImagesLazyLoaded": false,
+    "cssAndJsContentEncoding": "br",
+    "assetCacheControl": "public, max-age=300",
+    "assetTransferBytes": {
+      "style.css": 8840,
+      "store.css": 16254,
+      "store.js": 4626
+    }
+  }
+}
