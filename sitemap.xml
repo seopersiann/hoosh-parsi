@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hoosh-parsi.ir/</loc>
@@ -43,6 +43,11 @@
   </url>
   <url>
     <loc>https://hoosh-parsi.ir/articles/</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://hoosh-parsi.ir/best-iranian-wordpress-hosting/</loc>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://hoosh-parsi.ir/contact-us/</loc>

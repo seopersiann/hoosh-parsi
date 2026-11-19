@@ -23,3 +23,5 @@
 - assets/ai-neural-brain.webp و assets/optimized/ai-neural-brain-640.webp: تصویر مفهومی تازه با image_gen.imagegen برای هیروی خدمات هوش مصنوعی؛ تصویرِ تجهیز یا پروژهٔ واقعی نیست. پرامپت در content/image-prompts/ai-neural-brain.txt.
 
 - assets/vahid-parsa-website.webp و assets/optimized/vahid-parsa-website-640.webp: اسکرین‌شات واقعی صفحهٔ اصلی https://vahidparsa.com/، دریافت ۱۹ نوامبر ۲۰۲۶؛ تبدیل به WebP و حذف نوار پیمایش کناری برای معرفی نمونه‌کار.
+
+- assets/hosting-{netafraz,mihanwebhost,parspack,limoohost,iranserver,hostiran}.webp و نسخه‌های ۶۴۰ پیکسلی: اسکرین‌شات واقعی صفحهٔ اصلی سایت‌های رسمی در ۲۰ نوامبر ۲۰۲۶، به درخواست کاربر؛ لینک هر سایت در مقاله آمده است. assets/iranian-wordpress-hosting-cover.webp: کنارهم‌چینی همین شش اسکرین‌شات، نه تصویر تولیدشده یا آزمون عملکرد.

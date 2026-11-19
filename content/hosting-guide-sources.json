@@ -1,0 +1,45 @@
+{
+  "reviewedOn": "2026-11-20",
+  "scope": "Official public homepages and WordPress product descriptions, reviewed in browser; no hosting account purchase, speed benchmark or coupon redemption.",
+  "providers": [
+    {
+      "name": "نت‌افراز",
+      "homepage": "https://www.netafraz.com/",
+      "product": "https://www.netafraz.com/میزبانی-وب-حرفه‌ای"
+    },
+    {
+      "name": "میهن وب هاست",
+      "homepage": "https://mihanwebhost.com/",
+      "product": "https://mihanwebhost.com/my/wordpress-web-host"
+    },
+    {
+      "name": "پارس‌پک",
+      "homepage": "https://parspack.com/",
+      "product": "https://parspack.com/host/wordpress"
+    },
+    {
+      "name": "لیموهاست",
+      "homepage": "https://limoo.host/",
+      "product": "https://limoo.host/wordpress/"
+    },
+    {
+      "name": "ایران‌سرور",
+      "homepage": "https://www.iranserver.com/",
+      "product": "https://www.iranserver.com/web-hosting/wordpress/"
+    },
+    {
+      "name": "هاست‌ایران",
+      "homepage": "https://hostiran.net/",
+      "product": "https://hostiran.net/host/wordpress"
+    }
+  ],
+  "technicalSource": "https://wordpress.org/about/requirements/",
+  "couponSource": "User-provided Netafraz codes and existing internal discount guide",
+  "coupons": [
+    "UC661QAM",
+    "UC002CCJ",
+    "UC276ERG"
+  ],
+  "couponRedemptionVerified": false,
+  "images": "CUA screenshots of official homepages; resized WebP; composite cover of these same screenshots."
+}

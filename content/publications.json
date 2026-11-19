@@ -71,7 +71,19 @@
       "lastVerificationAttemptAt": "2026-11-19T09:26:31.109739+00:00",
       "verificationNotes": "Customer-facing article, home and article listing returned HTTP 200 and matched the published files byte-for-byte. Current desktop screenshot, responsive image and raw test evidence also matched. Local browser QA at 390px and 1280px passed, with image loaded, no horizontal overflow, working TOC and expandable reports, no page errors. Metadata, FAQ schema, IDs, anchors and links passed. Manual article update; no Todoist task selected or deleted.",
       "verifiedAt": "2026-11-19T09:26:31.109739+00:00"
+    },
+    {
+      "taskId": null,
+      "source": "manual-user-request",
+      "title": "بهترین هاست ایرانی وردپرس؛ مقایسه ۶ شرکت و کد تخفیف نت‌افراز",
+      "url": "https://hoosh-parsi.ir/best-iranian-wordpress-hosting/",
+      "date": "2026-11-20",
+      "image": "/assets/iranian-wordpress-hosting-cover.webp",
+      "imageSource": "Composite of six real homepage screenshots requested by the user; no generated brand or interface imagery.",
+      "verificationStatus": "pending",
+      "todoistRequired": false,
+      "todoistDeleted": null,
+      "notes": "User-specified order and three Netafraz codes preserved verbatim. Provider primary product pages reviewed; no performance testing or coupon redemption claimed. Screenshots captured via CUA and converted to responsive WebP."
     }
   ]
 }
-
