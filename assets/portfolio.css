@@ -1,0 +1,59 @@
+/* Collection page and the home link to the full portfolio. */
+.portfolio-more {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 30px;
+}
+.portfolio-more .button {
+  min-block-size: 48px;
+  padding: 12px 24px;
+  font-size: 15px;
+}
+.portfolio-index .portfolio-collection {
+  padding-block-start: 15px;
+}
+.portfolio-index .portfolio-card {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-index .portfolio-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.portfolio-index .project-detail-link {
+  margin-block-start: auto;
+  padding-block-start: 12px;
+  min-block-size: 44px;
+}
+.portfolio-index .portfolio-info p {
+  font-size: 15px;
+  line-height: 2.2;
+}
+.portfolio-index .portfolio-info h3 {
+  font-size: 21px;
+  line-height: 1.9;
+}
+.portfolio-index .portfolio-filters button {
+  min-block-size: 44px;
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .portfolio-index .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .portfolio-index .portfolio-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .portfolio-index .portfolio-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .portfolio-index .portfolio-filters button {
+    flex: 1 1 auto;
+    font-size: 13px;
+  }
+}
