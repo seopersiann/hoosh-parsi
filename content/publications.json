@@ -59,13 +59,13 @@
       "title": "چطور سرعت سایت طعم کارآفرینی رو بهینه‌سازی کردیم؟ تجربه واقعی یک پروژه",
       "url": "https://hoosh-parsi.ir/article-tame-karafarini-speed/",
       "date": "2026-11-19",
-      "image": "/assets/tame-karafarini-speed-desktop.webp",
+      "image": "/assets/tame-karafarini-speed-desktop-current.webp",
       "imageSource": "Screenshot of the real Lighthouse desktop report",
       "evidence": "/assets/tame-karafarini-speed-results.json",
       "verificationStatus": "pending",
       "todoistRequired": false,
       "todoistDeleted": null,
-      "notes": "Manual requested case study. PSI failed twice with Unable to resolve; explicitly identified local Lighthouse measurements and all three mobile runs are published. No Todoist task selected or changed.",
+      "notes": "Manual requested case study. PSI failed twice with Unable to resolve; explicitly identified local Lighthouse measurements and all three mobile runs are published. No Todoist task selected or changed. Current index/follow verified; latest desktop performance 97 and SEO 92. Initial three mobile runs kept with explicit timing; later mobile retests had NO_FCP, no new mobile score claimed.",
       "todoistDeletionStatus": "not_applicable"
     }
   ]

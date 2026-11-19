@@ -7,7 +7,8 @@
   "pageSpeedInsights": {
     "attempts": 2,
     "result": "Unable to resolve https://tamekarafarini.ir/. Try checking the URL for validity.",
-    "score": null
+    "score": null,
+    "laterRetry": "Google frontend returned HTTP 403, so no PSI score is claimed."
   },
   "runs": [
     {
@@ -201,6 +202,54 @@
         "cpuSlowdownMultiplier": 4
       },
       "runWarnings": []
+    },
+    {
+      "id": "desktop-2-current",
+      "fetchTime": "2026-11-19T08:54:07.670Z",
+      "finalUrl": "https://tamekarafarini.ir/",
+      "categories": {
+        "performance": 97,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 92
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "numericValue": 949.1969,
+          "displayValue": "0.9 s",
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "numericValue": 949.1969,
+          "displayValue": "0.9 s",
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms",
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0.015333298386056996,
+          "displayValue": "0.015",
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "numericValue": 1104.8888360837811,
+          "displayValue": "1.1 s",
+          "unit": "millisecond"
+        }
+      },
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "runWarnings": []
     }
   ],
   "mobileMedianPerformance": 99,
@@ -208,7 +257,7 @@
   "notes": [
     "All three mobile results retained. The first run contained a long unattributable main-thread task. The reason for that task was not established.",
     "No before/after performance comparison and no field-data/Core Web Vitals pass claim.",
-    "Indexability audit reported meta robots and X-Robots-Tag noindex/nofollow/noarchive."
+    "Mobile scores and screenshot in the article refer to the initial successful runs. Both later mobile retests failed with NO_FCP and produced no valid score."
   ],
   "observedImplementation": {
     "deferScript": "/assets/store.js?v=5fe59e6b7fbb",
@@ -221,5 +270,28 @@
       "store.css": 16254,
       "store.js": 4626
     }
-  }
+  },
+  "currentIndexability": {
+    "metaRobots": "index,follow",
+    "xRobotsTag": "index, follow",
+    "lighthouseCrawlableScore": 1,
+    "checkedDate": "2026-11-19",
+    "note": "Confirmed after the owner reported an indexability update. Earlier reports predate this update."
+  },
+  "latestDesktopPerformance": 97,
+  "representativeDesktopRun": "desktop-2-current",
+  "failedRetests": [
+    {
+      "id": "mobile-refresh",
+      "fetchTime": "2026-11-19T08:55:22.043Z",
+      "runtimeError": "NO_FCP",
+      "performanceScore": null
+    },
+    {
+      "id": "mobile-refresh-retry",
+      "fetchTime": "2026-11-19T08:57:11.463Z",
+      "runtimeError": "NO_FCP",
+      "performanceScore": null
+    }
+  ]
 }

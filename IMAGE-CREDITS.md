@@ -17,3 +17,5 @@
 
 - assets/tame-karafarini-speed-desktop.webp و assets/tame-karafarini-speed-mobile.webp و نسخه‌های ۶۴۰ پیکسلی: اسکرین‌شات واقعی گزارش‌های محلی Lighthouse 13.6.0، آزمون صفحهٔ اصلی https://tamekarafarini.ir/ در ۱۹ نوامبر ۲۰۲۶. تصویر موبایل متعلق به اجرای دوم از سه اجراست.
 - assets/tame-karafarini-pagespeed-error.webp: اسکرین‌شات واقعی خطای دامنه در PageSpeed Insights در همان تاریخ؛ هیچ امتیاز موفقی از PSI دریافت نشد.
+
+- assets/tame-karafarini-speed-desktop-current.webp و نسخهٔ ۶۴۰ پیکسلی آن: اسکرین‌شات واقعی بازبینی Lighthouse دسکتاپ پس از تأیید index, follow در ۱۹ نوامبر ۲۰۲۶، عملکرد ۹۷.
