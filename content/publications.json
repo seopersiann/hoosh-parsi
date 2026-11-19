@@ -80,10 +80,13 @@
       "date": "2026-11-20",
       "image": "/assets/iranian-wordpress-hosting-cover.webp",
       "imageSource": "Composite of six real homepage screenshots requested by the user; no generated brand or interface imagery.",
-      "verificationStatus": "pending",
+      "verificationStatus": "verified",
       "todoistRequired": false,
       "todoistDeleted": null,
-      "notes": "User-specified order and three Netafraz codes preserved verbatim. Provider primary product pages reviewed; no performance testing or coupon redemption claimed. Screenshots captured via CUA and converted to responsive WebP."
+      "notes": "User-specified order and three Netafraz codes preserved verbatim. Provider primary product pages reviewed; no performance testing or coupon redemption claimed. Screenshots captured via CUA and converted to responsive WebP.",
+      "verifiedAt": "2026-11-19T21:15:50.147302+00:00",
+      "publicationCommit": "ad7a0328043221373550d4af655b99c0e51c0a2b",
+      "verificationNotes": "All 19 public article, CSS, image, home, listing and sitemap files returned HTTPS 200 and matched the publication byte-for-byte. Browser QA at 320px, 390px and desktop passed; 16px mobile prose, independent table scrolling, six provider images, all coupon codes, TOC anchors, metadata, FAQ and Article schema verified. Manual request; no Todoist task selected or modified."
     }
   ]
 }
