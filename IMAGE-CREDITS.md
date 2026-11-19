@@ -19,3 +19,5 @@
 - assets/tame-karafarini-pagespeed-error.webp: اسکرین‌شات واقعی خطای دامنه در PageSpeed Insights در همان تاریخ؛ هیچ امتیاز موفقی از PSI دریافت نشد.
 
 - assets/tame-karafarini-speed-desktop-current.webp و نسخهٔ ۶۴۰ پیکسلی آن: اسکرین‌شات واقعی بازبینی Lighthouse دسکتاپ پس از تأیید index, follow در ۱۹ نوامبر ۲۰۲۶، عملکرد ۹۷.
+
+- assets/ai-neural-brain.webp و assets/optimized/ai-neural-brain-640.webp: تصویر مفهومی تازه با image_gen.imagegen برای هیروی خدمات هوش مصنوعی؛ تصویرِ تجهیز یا پروژهٔ واقعی نیست. پرامپت در content/image-prompts/ai-neural-brain.txt.
