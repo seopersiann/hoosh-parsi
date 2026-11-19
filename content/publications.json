@@ -66,7 +66,11 @@
       "todoistRequired": false,
       "todoistDeleted": null,
       "notes": "Manual requested case study. PSI failed twice with Unable to resolve; explicitly identified local Lighthouse measurements and all three mobile runs are published. No Todoist task selected or changed. Current index/follow verified; latest desktop performance 97 and SEO 92. Initial three mobile runs kept with explicit timing; later mobile retests had NO_FCP, no new mobile score claimed.",
-      "todoistDeletionStatus": "not_applicable"
+      "todoistDeletionStatus": "not_applicable",
+      "publicationCommit": "dc895b53570fce92cddb4050b1124cc007a883cc",
+      "lastVerificationAttemptAt": "2026-11-19T09:07:38.417657+00:00",
+      "verificationNotes": "Initial published article and all original report images/evidence were confirmed live over HTTPS, with browser HTTP 200 and loaded hero. Latest revision updates current index/follow and desktop 97; final live update verification is pending because repeated HTTPS and browser requests timed out. Local mobile/desktop layout, links, metadata/schema and evidence checks passed. No Todoist task was selected or deleted."
     }
   ]
 }
+
