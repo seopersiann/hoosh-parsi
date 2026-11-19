@@ -64,8 +64,9 @@
       "evidence": "/assets/tame-karafarini-speed-results.json",
       "verificationStatus": "pending",
       "todoistRequired": false,
-      "todoistDeleted": true,
-      "notes": "Manual requested case study. PSI failed twice with Unable to resolve; explicitly identified local Lighthouse measurements and all three mobile runs are published. No Todoist task selected or changed."
+      "todoistDeleted": null,
+      "notes": "Manual requested case study. PSI failed twice with Unable to resolve; explicitly identified local Lighthouse measurements and all three mobile runs are published. No Todoist task selected or changed.",
+      "todoistDeletionStatus": "not_applicable"
     }
   ]
 }
