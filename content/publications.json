@@ -62,14 +62,15 @@
       "image": "/assets/tame-karafarini-speed-desktop-current.webp",
       "imageSource": "Screenshot of the real Lighthouse desktop report",
       "evidence": "/assets/tame-karafarini-speed-results.json",
-      "verificationStatus": "pending",
+      "verificationStatus": "verified",
       "todoistRequired": false,
       "todoistDeleted": null,
       "notes": "Manual requested case study. PSI failed twice with Unable to resolve; explicitly identified local Lighthouse measurements and all three mobile runs are published. No Todoist task selected or changed. Current index/follow verified; latest desktop performance 97 and SEO 92. Initial three mobile runs kept with explicit timing; later mobile retests had NO_FCP, no new mobile score claimed. Customer-facing rewrite requested: plain-language architecture, observed project quality, purchasing journey and consultation CTAs; measurement evidence preserved in expandable sections.",
       "todoistDeletionStatus": "not_applicable",
-      "publicationCommit": "dc895b53570fce92cddb4050b1124cc007a883cc",
-      "lastVerificationAttemptAt": "2026-11-19T09:07:38.417657+00:00",
-      "verificationNotes": "Initial published article and all original report images/evidence were confirmed live over HTTPS, with browser HTTP 200 and loaded hero. Latest revision updates current index/follow and desktop 97; final live update verification is pending because repeated HTTPS and browser requests timed out. Local mobile/desktop layout, links, metadata/schema and evidence checks passed. No Todoist task was selected or deleted."
+      "publicationCommit": "cd62f744abf811c2acc6f8a772079a1fd2143b56",
+      "lastVerificationAttemptAt": "2026-11-19T09:26:31.109739+00:00",
+      "verificationNotes": "Customer-facing article, home and article listing returned HTTP 200 and matched the published files byte-for-byte. Current desktop screenshot, responsive image and raw test evidence also matched. Local browser QA at 390px and 1280px passed, with image loaded, no horizontal overflow, working TOC and expandable reports, no page errors. Metadata, FAQ schema, IDs, anchors and links passed. Manual article update; no Todoist task selected or deleted.",
+      "verifiedAt": "2026-11-19T09:26:31.109739+00:00"
     }
   ]
 }
