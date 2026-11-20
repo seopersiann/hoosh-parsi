@@ -48,10 +48,17 @@
       "image": "/assets/homepage-sections.webp",
       "imagePrompt": "content/image-prompts/homepage-sections.txt",
       "verificationStatus": "verified",
-      "todoistDeleted": false,
+      "todoistDeleted": true,
       "verifiedAt": "2026-11-11T06:03:09.012480+00:00",
-      "todoistDeletionStatus": "awaiting_explicit_confirmation",
-      "verificationNotes": "Live HTTPS article and both WebP sizes matched the published files byte-for-byte. Heading, links, anchors, metadata, JSON-LD, sitemap and listing checks passed. Visual browser preview was unavailable."
+      "todoistDeletionStatus": "deleted",
+      "verificationNotes": "Live HTTPS article and both WebP sizes matched the published files byte-for-byte. Heading, links, anchors, metadata, JSON-LD, sitemap and listing checks passed. Visual browser preview was unavailable.",
+      "todoistDeletedAt": "2026-11-20T16:11:09.150255+00:00",
+      "lastReconciledAt": "2026-11-20T16:11:09.150255+00:00",
+      "verifiedArticleSha": "6ebdce8eca4d1a54da390523ae17fd6afbcac693",
+      "verifiedHeroImage": "/assets/homepage-sections-cover.webp",
+      "verifiedHeroImageSha": "0e91a604cddd41e8c5cca8a7b8699cd464f1d071",
+      "todoistDeletedAfterHttpsVerification": true,
+      "reconciliationNotes": "HTTPS article and its current cover returned 200 and their Git blob hashes matched main. Task project, exact title and absence of children were checked before deleting this task only. A full all-assignee project listing after deletion returned 36 active tasks, no more pages. No new article: manual hosting guide already published on 2026-11-20 Tehran."
     },
     {
       "taskId": null,
