@@ -106,8 +106,12 @@
       "date": "2026-11-22",
       "image": "/assets/start-online-business-cover.webp",
       "imagePrompt": "content/image-prompts/start-online-business.txt",
-      "verificationStatus": "pending",
-      "todoistDeleted": false
+      "verificationStatus": "verified",
+      "todoistDeleted": true,
+      "verifiedAt": "2026-11-22T06:11:12.048270+00:00",
+      "todoistDeletionStatus": "deleted",
+      "todoistDeletedAt": "2026-11-22T06:11:12.048569+00:00",
+      "verificationNotes": "Article, generated WebP cover at both sizes, home, article index and sitemap returned HTTPS 200 and matched source byte-for-byte. Static headings, IDs, anchors, internal links and JSON-LD passed. Existing responsive template retained; live browser visual QA unavailable. Task exact ID/project/title and no children confirmed before scoped deletion; full project re-list has 35 tasks with no further pages."
     }
   ]
 }
