@@ -98,6 +98,16 @@
       "imageUpdateStatus": "verified",
       "imageVerifiedAt": "2026-11-19T21:25:18.981484+00:00",
       "imagePublicationCommit": "15b15538283f2496894ec985d15e8d94373350a2"
+    },
+    {
+      "taskId": "6hwpM9hH7hprgmJX",
+      "title": "راه‌اندازی کسب‌وکار اینترنتی از صفر؛ نقشه راه از ایده تا اولین سفارش",
+      "url": "https://hoosh-parsi.ir/article-start-online-business/",
+      "date": "2026-11-22",
+      "image": "/assets/start-online-business-cover.webp",
+      "imagePrompt": "content/image-prompts/start-online-business.txt",
+      "verificationStatus": "pending",
+      "todoistDeleted": false
     }
   ]
 }
