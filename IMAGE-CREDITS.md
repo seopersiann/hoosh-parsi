@@ -29,3 +29,5 @@
 - assets/iranian-wordpress-hosting-cover-v2.webp و نسخهٔ ۶۴۰ پیکسلی: تصویر مفهومی تازه با image_gen.imagegen، پرچم ایران، سرور هاست و نماد ابر با سبک تصویری مقاله‌های هوشمند پارسی. تصویرِ دیتاسنتر واقعی نیست. پرامپت در content/image-prompts/iranian-wordpress-hosting-cover.txt؛ اسکرین‌شات واقعی شرکت‌ها در مقاله حفظ شده‌اند.
 
 - assets/start-online-business-cover.webp و نسخهٔ ۶۴۰ پیکسلی: تصویر مفهومی تازه با image_gen.imagegen برای راهنمای شروع کسب‌وکار اینترنتی؛ عکس پروژهٔ واقعی نیست.
+
+- assets/professional-website-features-cover.webp و نسخهٔ ۶۴۰ پیکسلی: تصویر مفهومی تازه با image_gen.imagegen، برای مقالهٔ ویژگی‌های سایت حرفه‌ای؛ تصویر پروژهٔ واقعی نیست.
