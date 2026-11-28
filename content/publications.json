@@ -126,6 +126,16 @@
       "todoistDeletionStatus": "deleted",
       "todoistDeletedAt": "2026-11-23T05:56:13.365647+00:00",
       "verificationNotes": "Article, original WebP cover at both sizes, home, article index and sitemap returned HTTPS 200 and matched source bytes. Static H1, 15 criteria, unique IDs, anchors, internal links, JSON-LD and canonical checks passed. Existing responsive template retained; browser visual QA unavailable. Exact task title/project/id and zero children verified before deleting only this task. Full project re-list has 34 tasks and no more pages."
+    },
+    {
+      "taskId": "6hwpM9jqPvWQRFp5",
+      "title": "چگونه بدون کدنویسی سایت بسازیم؟ مقایسه روش‌ها، هزینه‌ها و محدودیت‌ها",
+      "url": "https://hoosh-parsi.ir/article-build-website-without-coding/",
+      "date": "2026-11-28",
+      "image": "/assets/no-code-website-cover.webp",
+      "imagePrompt": "content/image-prompts/no-code-website.txt",
+      "verificationStatus": "pending",
+      "todoistDeleted": false
     }
   ]
 }

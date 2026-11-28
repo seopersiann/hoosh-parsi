@@ -31,3 +31,5 @@
 - assets/start-online-business-cover.webp و نسخهٔ ۶۴۰ پیکسلی: تصویر مفهومی تازه با image_gen.imagegen برای راهنمای شروع کسب‌وکار اینترنتی؛ عکس پروژهٔ واقعی نیست.
 
 - assets/professional-website-features-cover.webp و نسخهٔ ۶۴۰ پیکسلی: تصویر مفهومی تازه با image_gen.imagegen، برای مقالهٔ ویژگی‌های سایت حرفه‌ای؛ تصویر پروژهٔ واقعی نیست.
+
+- assets/no-code-website-cover.webp و نسخهٔ ۶۴۰ پیکسلی: تصویر مفهومی تازه با image_gen.imagegen برای راهنمای ساخت سایت بدون کدنویسی؛ تصویر نرم‌افزار واقعی نیست.
