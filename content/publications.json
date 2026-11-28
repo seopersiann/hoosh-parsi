@@ -134,8 +134,12 @@
       "date": "2026-11-28",
       "image": "/assets/no-code-website-cover.webp",
       "imagePrompt": "content/image-prompts/no-code-website.txt",
-      "verificationStatus": "pending",
-      "todoistDeleted": false
+      "verificationStatus": "verified",
+      "todoistDeleted": true,
+      "verifiedAt": "2026-11-28T08:07:37.967443+00:00",
+      "todoistDeletionStatus": "deleted",
+      "todoistDeletedAt": "2026-11-28T08:07:37.967527+00:00",
+      "verificationNotes": "Article, original generated cover at both WebP sizes, home, article index and sitemap returned HTTPS 200 and matched source bytes. Static headings, IDs, anchors, links, metadata and JSON-LD passed. Existing responsive template retained; attempted IAB preview was unavailable, so visual mobile/desktop QA is not claimed. Exact task title, project, ID and zero children verified before scoped deletion. All-assignee project re-list returned 33 tasks, no more pages."
     }
   ]
 }
